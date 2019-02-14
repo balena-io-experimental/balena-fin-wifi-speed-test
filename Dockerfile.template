@@ -1,8 +1,9 @@
-FROM balenalib/%%RESIN_MACHINE_NAME%%-debian:buster
+FROM balenalib/%%RESIN_MACHINE_NAME%%-debian:stretch
 
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get -q update && apt-get install -qy \
+    device-tree-compiler \
     iperf3 \
     iw \
     wireless-tools
