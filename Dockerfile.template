@@ -12,4 +12,4 @@ WORKDIR /usr/src/app
 
 COPY start.sh .
 
-CMD ["start.sh"]
+CMD ["bash", "start.sh"]
